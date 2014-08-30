@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  position: MyText
+  team: MyString
+  fpts: 1
+  overall_rank: 1
+  position_rank: 1
+
+two:
+  name: MyText
+  position: MyText
+  team: MyString
+  fpts: 1
+  overall_rank: 1
+  position_rank: 1
