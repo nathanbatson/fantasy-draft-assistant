@@ -1,28 +1,18 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=== Fantasy Draft Assistant
 
-Things you may want to cover:
+This is a work in progress and just an expirement in AngularJS and Rails4
 
-* Ruby version
+This is hard coded with my keeprs and custom rankings from CBS fantasy league, and imports from their CSV export of player stat projections.
 
-* System dependencies
+To get started:
 
-* Configuration
+<tt>bundle update</tt>
+<tt>rake db:create</tt>
+<tt>rake db:migrate</tt>
+<tt>rake db:seed</tt>
 
-* Database creation
+Then start the server:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<tt>bundle exec rails server</tt>
