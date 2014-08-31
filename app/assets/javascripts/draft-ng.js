@@ -30,9 +30,16 @@ draftApp.controller('playersController', function($scope, $http){
   }
 
   $scope.draftPlayer = function(player, drafted_by) {
+    player.drafted_by = drafted_by;
+    $scope.drafted_players.push(player);
+
+    var idx = $scope.players.indexOf(player);
+    if (idx > -1) {
+      $scope.players.splice(idx, 1);
+    }
+
     $http.post('/players/update', {id: player.id, drafted_by:drafted_by}).success(function(data) {
-      $scope.drafted_players = data.drafted_players
-      $scope.players = data.players;
+      // placeholder for manipulation
     });
   }
 

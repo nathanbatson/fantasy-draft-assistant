@@ -44,6 +44,8 @@
 
 
 span.glyphicon{
+	cursor: pointer;
+	
 	&.red{
 		color: #d9534f;
 	}

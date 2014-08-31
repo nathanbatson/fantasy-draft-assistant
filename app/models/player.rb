@@ -55,8 +55,8 @@ class Player < ActiveRecord::Base
       drafted_by: "me"
     )
 
-    import_from_csv('csvs/kickers.csv')
     import_from_csv('csvs/players.csv')
     import_from_csv('csvs/dst.csv', true)
+    import_from_csv('csvs/kickers.csv')
   end
 end
