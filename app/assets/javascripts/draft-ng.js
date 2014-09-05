@@ -26,7 +26,7 @@ draftApp.controller('playersController', function($scope, $http){
   }
 
   $scope.draftedFilter = function(player){
-    return !player.drafted_by;
+    return player.drafted_by != "me" || player.drafted_by != "other";
   }
 
   $scope.draftPlayer = function(player, drafted_by) {
